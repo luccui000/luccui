@@ -1,0 +1,137 @@
+:root {
+    --sticker1-color: rgb(236, 236, 236);
+    --sticker2-color: rgb(135, 226, 241);
+    --sticker3-color: rgb(193, 255, 196);
+    --dot-color: rgb(255, 104, 104);
+    --ripple-color: rgb(165, 224, 150);
+}
+.about {
+    padding: 10px 20px;
+}
+.about-content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.about-avatar {
+    min-width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.about-avatar img { 
+    width: 200px; 
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background-color: #fff;
+}
+.about-description {
+    width: 100%;
+}
+.about-description h3 {
+    display: block;
+    margin: 0;
+    width: 100%;
+    border-left: 5px solid var(rgb(230, 238, 245));
+    padding: 10px 20px;
+    border-radius: 4px 0px 0px 4px;
+    background: linear-gradient(to right,rgba(102, 102, 102, 0.7), rgba(233, 233, 255, 0));
+}
+.about-description p {
+    width: 80%;
+    font-size: 18px; 
+    line-height: 1.8;
+}
+.about-social {
+    padding-left: 0;
+}
+.about-social svg {
+    margin-right: 20px;
+    cursor: pointer;
+}
+.sticker {
+    position: absolute;
+    border-radius: 50px; 
+}
+.sticker1 { 
+    top: 10%;
+    left: 0px;
+    width: 60px;
+    height: 20px;
+    background-color: var(--sticker1-color);
+}
+.sticker2 { 
+    top: 70%;
+    left: 150px;
+    width: 60px;
+    height: 20px;   
+    background-color: var(--sticker2-color);
+}
+.sticker3 { 
+    top: 10%;
+    left: 200px;
+    width: 60px;
+    height: 20px;   
+    background-color: var(--sticker3-color);
+}
+.dots {
+    position: absolute;
+    top: 150px;
+    left: -20px;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    width: 50px;
+}
+.dots div {  
+    width: 5px;
+    height: 5px;
+    background-color: var(--dot-color); 
+    margin: 5px;
+    border-radius: 10px;
+} 
+.ripple {
+    position: absolute;
+    top: 80px;
+    left: 180px; 
+}
+.ripple > div > div {
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid var(--ripple-color);
+    border-right: 2px solid var(--ripple-color);
+    transform: rotate(-45deg);
+    display: inline-block;
+    margin: 2px;
+}
+.ripple > div:nth-child(2) {
+    position: relative;
+    top: -10px;
+}
+.ripple > div:nth-child(3) {
+    position: relative;
+    top: -20px;
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .about-content { 
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+    }
+    .about-description {
+        padding-left: 20px;
+    }
+    .about-description p {
+        width: 100%;
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .about-content {
+        display: flex;
+        flex-direction: column; 
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "Khái niệm lập trình đồng bộ, bất đồng bộ trong Javascript",
+            "content": "Synchronous (đồng bộ / tuần tự) tức là code chương trình sẽ chạy tuần tự từ trên xuống dưới. Khi nào lệnh trên hoàn thành thì lệnh dưới mới được chạy.  Đây là cách viết code rất thường dùng.",
+            "tags": ["Javascript", "Lập trình"],
+            "createdAt": "2021-12-09T01:03:57.873Z",
+            "updatedAt": "2021-12-09T01:03:57.873Z",
+            "createdBy": 1
+        },
+        {
+            "id": 2,
+            "title": "Sự khác biệt giữa let, const và var",
+            "content": "This is one of the most powerful features of React Router making it so you don't have to mess around with complicated layout code. The vast majority of your layouts are coupled to segments of the URL and React Router embraces this fully.",
+            "tags": ["Javascript", "Lập trình"],
+            "createdAt": "2021-12-09T01:03:57.873Z",
+            "updatedAt": "2021-12-09T01:03:57.873Z",
+            "createdBy": 1
+        },
+        {
+            "id": 3,
+            "title": "Dependency Injection trong PHP",
+            "content": "Dependency Injection (DI) là khái niệm thường được nghe trong giới lập trình. Có khá nhiều cái tên nghe liên quan và na ná nhau làm dev bị hoang mang như: Dependency Injection, Inversion of Control, Dependency Inversion, Dependency Injection Container.",
+            "tags": ["PHP", "Lập trình"],
+            "createdAt": "2021-12-09T01:03:57.873Z",
+            "updatedAt": "2021-12-09T01:03:57.873Z",
+            "createdBy": 1
+        } 
+    ]
+}

@@ -1,0 +1,52 @@
+.post {
+    margin: 0 10px; 
+} 
+.post-list {
+    padding-left: 0;
+}
+.post-item {
+    display: flex;
+    margin-bottom: 20px; 
+}
+.post-content {
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid var(--border-color);  
+}
+.post-date {
+    font-size: 13px;
+    min-width: 200px;
+}
+.post-title{
+    margin: 0;
+    font-weight: bold;
+    color: var(--border-color);
+}
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .post-date {
+        display: none;
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .post-date {
+        display: none;
+    }
+}

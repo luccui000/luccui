@@ -1,0 +1,17 @@
+.navbar { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    padding: 0 10px;
+}
+.navbar > div > a:not(:last-child) {
+    margin-right: 10px;
+}
+.navbar > div > button {
+    border: 1px solid transparent;
+    background-color: transparent; 
+    position: relative; 
+    top: 7px;
+    cursor: pointer;
+    padding: 0;
+} 
