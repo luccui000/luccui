@@ -1,0 +1,131 @@
+
+:root {
+    --text-color: rgb(34, 34, 34);
+    --primary-text-color: #008a7c;
+    --secondary-text-color: #757575;
+    --transpanrent-text-color: #9e9e9e;
+    
+}
+*, a, ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    padding: 10px;
+    line-height: 1.5;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.header__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}
+.header__name {
+    margin: 10px 0;
+}
+.header__position {
+    color: var(--secondary-text-color);
+    font-size: 18px;
+} 
+.content { 
+    display: flex; 
+    column-gap: 2rem;
+}
+.general {
+    max-width: 300px;
+}
+.main { 
+    flex: 1;
+}
+.general__title {
+    margin: 20px 0 15px 0;
+    color: var(--primary-text-color);
+} 
+.general__title.has-icon i {
+    margin-right: 20px;
+    color: var(--secondary-text-color);
+}
+.general__item {
+    list-style: none;
+}
+.general__link {
+    display: inline-block; 
+    text-decoration: none;
+    color: var(--text-color)
+}
+.general__link i {
+    width: 30px;
+    height: 30px;
+    color: var(--primary-text-color);
+}
+.general__skill--title {
+    margin: 20px 0 5px 0;
+}
+.general__skill--value {
+    font-size: 14px;
+}
+.general__content {
+    color: var(--text-color);
+    padding-left: 20px;
+    border-left: 2px solid var(--secondary-text-color);
+    position: relative;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+.general__content::before {
+    content: "";
+    position: absolute; 
+    left: -6px;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    border: 2px solid var(--transpanrent-text-color);
+    box-sizing: border-box;
+}
+.general__project {
+    font-size: 14px;
+
+}
+.general__project--title {
+    font-size: 16px;
+}   
+.btn {
+    padding: 5px 10px;
+    border: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-project {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: var(--text-color);
+    color: #fff;
+} 
+.general__education {
+    font-size: 18px;
+}
+.general__education--school {
+    color: var(--primary-text-color);
+}
+.general__education--time {
+    font-size: 14px;
+} 
+.general__education--achievements {
+    font-size: 14px;
+}
+.general__hobbies--item {
+    font-size: 15px;
+}

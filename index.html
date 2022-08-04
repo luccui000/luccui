@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Thực Tập PHP Laravel Framework + VueJS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="https://vietcv-io.s3.amazonaws.com/vietcv-io/user_avatar/0360af59a46bd0915b0c428ea83558ab50ec6f843afa6f8d9656dee1c354ee36" alt="" class="header__img">
+            <h1 class="header__name">THẠCH MINH LỰC</h1>
+            <p class="header__position">THỰC TẬP SINH PHP LARAVEL + VUE</p>
+        </header>
+        <div class="content">
+            <aside class="general">
+                <h3 class="general__title">LIÊN HỆ</h3>
+                <ul class="general__social"></ul>
+                <h3 class="general__title">KỸ NĂNG</h3>
+                <ul class="general__skill"></ul>
+            </aside>
+            <main class="main">
+                <h3 class="general__title has-icon"><i class="fa fa-user"></i>GIỚI THIỆU</h3>
+                <ul class="general__introduce"></ul>
+                <h3 class="general__title has-icon"><i class="fa fa-file"></i>DỰ ÁN</h3>
+                <ul class="general__project"></ul>
+                <h3 class="general__title has-icon"><i class="fa fa-graduation-cap"></i>HỌC VẤN</h3>
+                <ul class="general__education">
+                    <div class="general__content">
+                        <h5 class="general__education--major">CÔNG NGHỆ THÔNG TIN</h5>
+                        <h5 class="general__education--school" >ĐẠI HỌC TRÀ VINH</h5>
+                        <span class="general__education--time">2019 - 2023</span>
+                        <p class="general__education--achievements">
+                            GPA: > 3.35, Đạt học bổng học tập
+                        </p>
+                    </div>
+                </ul>
+                <h3 class="general__title has-icon"><i class="fa fa-magic"></i>SỞ THÍCH</h3>
+                <ul class="general__hobbies">
+                    <div class="general__content">
+                        <h5 class="general__hobbies--item">CÂU CÁ</h5>
+                        <h5 class="general__hobbies--item">NẤU ĂN</h5>
+                    </div>
+                </ul>
+            </main>
+        </div>
+    </div>
+    <script>
+        const info = [
+            {
+                icon: 'fa-birthday-cake',
+                value: '23/01/2000',
+                href: '',
+            }, {
+                icon: 'fa-envelope',
+                value: 'luccui2k@gmail.com',
+                href: 'mailto:luccui2k@gmail.com'
+            }, {
+                icon: 'fa-map-marker',
+                value: 'Duyên Hải, Trà Vinh',
+                href: '',
+            }, {
+                icon: 'fa-facebook-square',
+                value: 'Minh Lực',
+                href: 'https://www.facebook.com/luccui2301/'
+            }, {
+                icon: 'fa-github',
+                value: 'Lực Cui', 
+                href: 'https://github.com/luccui000'
+            }
+        ];
+        const skills = [
+            {
+                name: 'NGÔN NGỮ LẬP TRÌNH',
+                value: 'Javascript, PHP, C, C++'
+            }, {
+                name: 'UX/UI',
+                value: 'Boostrap, TailwindCSS'
+            }, {
+                name: 'CƠ SỞ DỮ LIỆU',
+                value: 'MySQL, SQL Server'
+            }, {
+                name: 'KĨ NĂNG KHÁC',
+                value: 'Cấu hình NGINX Webserver, sử dụng Linux, Git/Github, Docker'
+            }
+        ];
+        const introduces = [
+            {
+                name: '',
+                value: 'Mình hiện đang là sinh viên năm 3 trường Đại học Trà Vinh. Chuyên ngành CNTT. Ngôn ngữ lập trình mình yêu thích là Javascript, PHP, C, C++. Backend mình hiểu biết và yêu thích là PHP Laravel Framework và front end thì mình cũng đang tìm hiểu về VueJS. Bản thân mình yêu thích công nghệ mới và mình hoàn toàn sẵn sàng thay đổi ngôn ngữ, công nghệ để làm việc.'           
+            }
+        ];
+        const projects = [
+            {
+                name: 'WEBSITE BÁN ĐIỆN THOẠI LARAVEL FRAMEWORK (ĐỒ ÁN CƠ SƠ NGÀNH NĂM 2)',
+                time: {
+                    start: '02/05/2021',
+                    end: '07/07/2021',
+                },
+                content: `
+                <ul style="margin-left: 30px;">
+                    <li>Ph&acirc;n t&iacute;ch thiết kế CSDL website b&aacute;n h&agrave;ng </li>
+                    <li>Lập tr&igrave;nh chức năng bằng Laravel Framework </li>
+                    <li>T&iacute;ch hợp hệ thống thanh to&aacute;n VN Pay </li>
+                    <li>X&aacute;c thực người d&ugrave;ng bằng google, facebook&nbsp;</li>
+                    <li>T&iacute;ch hợp hệ thống t&iacute;nh ph&iacute; vận chuyển bằng giaohangnhanh api</li>
+                </ul>`,
+                link: 'https://github.com/luccui000/doancosonganh'
+            }, 
+            {
+                name: 'WEBSITE BÁN TRÁI CÂY BẰNG LARAVEL FRAMEWORK VÀ VUE JS (ĐỒ ÁN CHUYÊN NGÀNH NĂM 3)',
+                time: {
+                    start: '07/06/2022',
+                    end: '07/07/2022',
+                },
+                content: `
+                    <ul style="margin-left: 30px;">
+                        <li>Restful API bằng Laravel Framework </li>
+                        <li>T&igrave;m hiểu về m&ocirc; h&igrave;nh Domain-Driven Design </li>
+                        <li>T&iacute;ch hợp hệ thống thanh to&aacute;n VNPay, x&aacute;c thực JWT, t&iacute;nh ph&iacute; vận chuyển giaohangnhanh api </li>
+                        <li>Lập tr&igrave;nh chức năng b&aacute;n h&agrave;ng như th&ecirc;m gi&ograve; h&agrave;ng, lọc sản phẩm, x&aacute;c thực thanh to&aacute;n bằng VueJS 3 v&agrave; quản l&yacute; webite b&aacute;n h&agrave;ng bằng VueJS 2</li>
+                    </ul>
+                `,
+                link: 'hps://github.com/luccui000/do-an-chuyen-nganh'
+            },
+            {
+                name: 'WEBSITE PAGEBUILDER BẰNG LARAVEL FRAMEWORK VÀ VUEJS 3',
+                time: {
+                    start: '04/07/2022',
+                    end: '14/07/2022',
+                },
+                content: `
+                <ul style="margin-left: 30px;">
+                    <li>Ph&acirc;n t&iacute;ch v&agrave; thiết kế CSDL pagebuilder </li>
+                    <li>Cho ph&eacute;p người d&ugrave;ng x&acirc;y dựng trang bằng c&aacute;ch thiết kế layout v&agrave; chọn c&aacute;c th&agrave;nh phần như card, h&igrave;nh ảnh, văn bản, carousel,... </li>
+                    <li>Cho ph&eacute;p hiện thỉ trang được tạo theo slug</li>
+                </ul>
+                `,
+                link: 'https://github.com/luccui000/pagebuilder'
+            },
+            {
+                name: 'WEBSITE BÁN TRÁI CÂY BẰNG LARAVEL FRAMEWORK VÀ VUE JS (ĐỒ ÁN CHUYÊN NGÀNH NĂM 3)',
+                time: {
+                    start: '03/04/2022',
+                    end: '26/07/2022',
+                },
+                content: `
+                    <ul style="margin-left: 30px;">
+                        <li>X&acirc;y dựng c&aacute;c th&agrave;nh phần như routing, view, controller, binding như Laravel </li>
+                        <li>Lập tr&igrave;nh c&aacute;c chức năng của một website b&aacute;n h&agrave;ng</li>
+                    </ul>
+                `,
+                link: 'https://github.com/luccui000/xay-dung-phanmem-huong-doi-tuong'
+            }
+        ]; 
+        
+        const generalSocial = document.querySelector(".general__social");
+        const generalSkill = document.querySelector(".general__skill");
+        const generalIntroduce = document.querySelector(".general__introduce");
+        const generalProjectItem = document.querySelector(".general__project");
+
+
+        document.addEventListener("DOMContentLoaded", () => { 
+            generalSocial.innerHTML = info.reduce((prev, curr) => prev += makeSocialChild(curr), '');
+            generalSkill.innerHTML = skills.reduce((prev, curr) => prev += makeSkillChild(curr), '');
+            generalIntroduce.innerHTML = introduces.reduce((prev, curr) => prev += makeIntroductionChild(curr), '');
+            generalProjectItem.innerHTML = projects.reduce((prev, curr) => prev += makeProjectItemChild(curr), '');
+
+
+            function makeSocialChild(el) {
+                return `
+                    <li class="general__item">
+                        <a href="${el.href ?? ''}" class="general__link">
+                            <i class="fa ${el.icon}"></i>
+                            <span>${el.value}</span>
+                        </a>
+                    </li>
+                `
+            }
+            function makeSkillChild(el) {
+                return `
+                    <li class="general__item">
+                        <h4 class="general__skill--title">${el.name}</h4>
+                        <p class="general__skill--value">${el.value}</p>
+                    </li>
+                `;
+            }
+            function makeIntroductionChild(el) {
+                return `
+                    <li class="general__item">
+                        <p class="general__content">${el.value}</p>
+                    </li>
+                `;
+            }
+            function makeProjectItemChild(el) {
+                return `
+                    <div class="general__content general__project">
+                        <h5 class="general__project--title">${el.name}</h5>
+                        <span class="general__project--time">${el.time.start} - ${el.time.end}</span>
+                        <p class="general__project--content">${el.content}</p>
+                        <a href="${el.link}" class="btn btn-project">Github<a>
+                    </div>
+                `;
+            }
+        })
+    </script>
+</body>
+</html>
